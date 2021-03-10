@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    color: #323232;
+    color: #ffffff;
     border: none;
 }
 textarea:focus, input:focus{
@@ -11,17 +11,21 @@ textarea:focus, input:focus{
 }
 a, label{
     font-size: .8rem;
+    color: #ffffff;
+}
+a, input{
+    color: #000;
 }
 a:hover{
-    color: #085588;
+    color: #223474;
 }
 
 /* conteiner login */ 
 
 .login-conteiner{
-    background-color: #fff;
+    background-color: #000;
     width: 400px;
-    height: 620px;
+    height: 650px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px 30px;
@@ -63,6 +67,7 @@ input{
     padding: 10px;
     font-size: 1rem;
     margin-bottom: 20px;
+    border-radius: 10px 10px 10px 10px;
 }
 input:focus{
     border-bottom: 2px solid #085588;
@@ -94,10 +99,13 @@ input:focus{
 /* rdes sociais */ 
 
 #social-container p{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 #register-container p{
     margin-bottom: 10px;
+}
+#register-container, a{
+    color: #085588;
 }
 #social-container i{
     height: 40px;
