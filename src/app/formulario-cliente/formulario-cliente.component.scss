@@ -3,122 +3,99 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    color: #ffffff;
+    color: #fff;
     border: none;
 }
-textarea:focus, input:focus{
+#nome, #rg, #cpf, #address, #telephone, #dateofbirth, #email, .lista{
+    display: block;
+    width: 100%;
+}
+#nome:focus, #rg:focus, #cpf:focus, #address:focus, #telephone:focus, #dateofbirth:focus, #email:focus, .lista:focus{
     outline: none;
 }
-a, label{
-    font-size: .8rem;
-    color: #ffffff;
-}
-a, input{
-    color: #000;
-}
-a:hover{
-    color: #223474;
-}
-
-/* conteiner login */ 
-
-.login-conteiner{
-    background-color: #000;
-    width: 400px;
-    height: 650px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px 30px;
-    margin-top: 10vh;
-    border-radius: 80px 0px 80px 0px;
-    text-align: center;
-}
-
-/* formulário */
-
+/* form */
 .usuario{
-    width: 130x;
-    height: 130px;
+    width: 100px;
+    height: 100px;
     border-radius: 5%;
     position: relative;
-    top: 0;
+    top: -2%;
+    left: 175px;
+    
+}
+.main-container{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #000;
+    border-radius: 80px 0px 80px 0px;
+    padding: 25px;
+    height: 730px;
+}
+.main-container h1{
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.6rem; /* adpatada ao elemento root */
 }
 form{
-    margin-top: 30px;
-    margin-bottom: 40px;
-    padding: 5% 35% 10% 35%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .full-box{
-    width: 330px;
-    right: 115px;
     flex: 1 1 100%;
     position: relative;
 }
-label, input{
-    display: block;
-    width: 100%;
-    text-align: left;
+.half-box{
+    flex: 1 1 45%;
+    position: relative;
 }
-label{
+.spacing{
+    margin-right: 2.5%;
+}
+.lista{
     font-weight: bold;
+    font-size: .8rem;
 }
-input{
-    border-bottom: 2px solid #323232;
+#nome, #rg, #cpf, #address, #telephone, #dateofbirth, #email{
+    flex: 1 1 100%;
+    position: relative;
+
+    border-bottom: 2px solid #fff;
     padding: 10px;
-    font-size: 1rem;
-    margin-bottom: 20px;
+    font-size: .9rem;
+    margin-bottom: 40px;
+    background-color: rgba(0, 0, 5, 0.8);
     border-radius: 10px 10px 10px 10px;
 }
-input:focus{
-    border-bottom: 2px solid #085588;
+#nome:focus, #rg:focus, #cpf:focus, #address:focus, #telephone:focus, #dateofbirth:focus, #email:focus{
+    border-color: #e60084;
 }
-#forgot-pass{
-    text-align: right;
-    display: block;
-}
-[type="button"] {
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
+.enter{
+    background: #e60084;
     border: none;
-    height: 40px;
+    color: #fff;
+    padding: 10px 193px;
+    text-align: center;
+    font-size: 16px;
     border-radius: 20px;
-    margin-top: 30px;
-    color: #ffffff;
-    background-color: #085588;
-    padding: 10px 120px;
     cursor: pointer;
+    margin-bottom: 20px;
+    height: 40px;
 }
-[type="button"]:hover{
-    background-color: #1b223c;
-    transition: .5s;
-}
-[type="button"]:focus{
+.enter:focus{
     outline: none;
 }
-/* rdes sociais */ 
-
-#social-container, #social-container p{
-    margin-bottom: 5px;
-}
-#register-container p{
-    margin-bottom: 10px;
-}
-#register-container, a{
-    color: #085588;
-}
-#social-container i{
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    line-height: 40px;
-    color: #ffffff;
-    margin: 0 5px;
+.enter[type="button"]:hover{
     cursor: pointer;
+    background: #b30467;
+    color: #fff;
+    transition: 0.2s;
 }
-.fa-facebook-f {
-    background-color: #3b5998;
+#agreement{
+    margin-right: 5px;
 }
-.fa-linkedin-in{
-    background-color: #0077b5;
+#agreement:focus  #agreement-label{
+    display: inline-block;
+    width: auto;
 }
