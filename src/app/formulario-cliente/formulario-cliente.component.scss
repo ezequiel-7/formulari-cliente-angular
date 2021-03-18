@@ -21,8 +21,8 @@ input:focus, .lista:focus{
     background-color: #000;
     border-radius: 80px 0px 80px 0px;
     padding: 25px;
-    margin-top: 5vh;
-    height: 700px;
+    margin-top: 10vh;
+    height: 745px;
 }
 .main-container h1{
     text-align: center;
@@ -98,7 +98,13 @@ input:focus{
 #agreement{
     margin-right: 5px;
 }
-#agreement:focus  #agreement-label{
+#agreement,  #agreement-label{
     display: inline-block;
     width: auto;
+}
+#agreement-label a{
+    color: #085588;
+}
+#agreement-label a:hover{
+    color: #063f66;
 }
