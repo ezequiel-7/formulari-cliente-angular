@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListClienteComponent implements OnInit {
 
+  public listCliente = [
+    'lorem ipsun'
+  ];
+
   constructor() { }
 
   ngOnInit(): void {

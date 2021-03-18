@@ -3,20 +3,20 @@
     <img class="usuario" src="assets/images/585e4bf3cb11b227491c339a.png" alt="">
     <h1>Login</h1>
 
-    <form action="">
+    <form>
 
         <div class="full-box">
             <label for="">E-mail:</label>
-            <input type="text" name="text" id="name" placeholder="Digite seu E-mail" autocomplete="off">
+            <input type="text" name="text" placeholder="Digite seu E-mail" autocomplete="off">
         </div>
 
         <div class="full-box">
             <label for="">Senha:</label>
-            <input type="password" name="text" id="species"  placeholder="Digite Sua Senha">
+            <input type="password" name="text" placeholder="Digite Sua Senha">
         </div>
 
         <div class="full-box">
-            <button type="button">Login</button>
+            <button class="enter" type="button">Login</button>
         </div>
 
     </form>
@@ -32,7 +32,7 @@
 
     <div id="register-conteiner">
         <p>Ainda não tem uma conta?</p>
-        <a href="#">Rgistrar</a>
+        <a [routerLink]="['/formulario-cliente']">Cadastra-se</a>
     </div>
     
 </div>

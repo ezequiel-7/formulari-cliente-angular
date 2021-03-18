@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { FormularioClienteComponent } from './formulario-cliente/formulario-cliente.component';
 import { LoginClienteComponent } from './login-cliente/login-cliente.component';
 import { ListClienteComponent } from './list-cliente/list-cliente.component';
+import { FormsModule } from '@angular/forms';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { ListClienteComponent } from './list-cliente/list-cliente.component';
     ListClienteComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
