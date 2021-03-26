@@ -7,13 +7,15 @@ import { LoginClienteComponent } from './login-cliente/login-cliente.component';
 import { ListClienteComponent } from './list-cliente/list-cliente.component';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+import { RascunhoAngularComponent } from './rascunho-angular/rascunho-angular.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormularioClienteComponent,
     LoginClienteComponent,
-    ListClienteComponent
+    ListClienteComponent,
+    RascunhoAngularComponent
   ],
   imports: [
     BrowserModule,
