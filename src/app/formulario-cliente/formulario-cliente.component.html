@@ -1,162 +1,52 @@
-<style>
+<div class="main-container">
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #323232;
-    border: none;
-}
-body{
-    padding-top: 5vh;
-    background-image: url(img/images.jfif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-textarea:focus, input:focus{
-    outline: none;
-}
-a, label{
-    font-size: .8rem;
-}
-a:hover{
-    color: #085588;
-}
+    <img class="usuario" src="assets/images/585e4bf3cb11b227491c339a.png" alt="">
+    <h1>Cadastro</h1>
 
-/* conteiner login */ 
+    <form>
 
-.login-conteiner{
-    background-color: #fff;
-    width: 400px;
-    height: 620px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px 30px;
-    margin-top: 10vh;
-    border-radius: 80px 0px 80px 0px;
-    text-align: center;
-}
-
-/* formulário */
-
-.usuario{
-    width: 130x;
-    height: 130px;
-    border-radius: 5%;
-    position: relative;
-    top: 0;
-}
-form{
-    margin-top: 30px;
-    margin-bottom: 40px;
-    padding: 5% 35% 10% 35%;
-}
-.full-box{
-    width: 330px;
-    right: 115px;
-    flex: 1 1 100%;
-    position: relative;
-}
-label, input{
-    display: block;
-    width: 100%;
-    text-align: left;
-}
-label{
-    font-weight: bold;
-}
-input{
-    border-bottom: 2px solid #323232;
-    padding: 10px;
-    font-size: 1rem;
-    margin-bottom: 20px;
-}
-input:focus{
-    border-bottom: 2px solid #085588;
-}
-#forgot-pass{
-    text-align: right;
-    display: block;
-}
-[type="button"] {
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    border: none;
-    height: 40px;
-    border-radius: 20px;
-    margin-top: 30px;
-    color: #ffffff;
-    background-color: #085588;
-    padding: 10px 120px;
-    cursor: pointer;
-}
-[type="button"]:hover{
-    background-color: #1b223c;
-    transition: .5s;
-}
-[type="button"]:focus{
-    outline: none;
-}
-/* rdes sociais */ 
-
-#social-container p{
-    margin-bottom: 20px;
-    
-}
-#register-container p{
-    margin-bottom: 10px;
-}
-#social-container i{
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    line-height: 40px;
-    color: #ffffff;
-    margin: 0 5px;
-    cursor: pointer;
-}
-.fa-facebook-f {
-    background-color: #3b5998;
-}
-.fa-linkedin-in{
-    background-color: #0077b5;
-}
-
-</style>
-
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
-<head>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384=oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-</head>
-
-<div class="login-conteiner">
-    <img class="usuario" src="img/585e4bf3cb11b227491c339a.png" alt="">
-    <h1>Login</h1>
-    <form action="">
         <div class="full-box">
-            <label for="">E-mail:</label>
-            <input type="text" name="text" id="name" placeholder="Digite seu E-mail" autocomplete="off">
+            <label class="lista" for="">Nome</label>
+            <input id="nome" type="text" placeholder="Digite seu Nome Completo" autocomplete="off">
         </div>
-        <div class="full-box">
-            <label for="">Senha:</label>
-            <input type="text" name="text" id="species"  placeholder="Digite Sua Senha">
+
+        <div class="half-box spacing" >
+            <label class="lista" for="">RG</label>
+            <input id="rg" type="text" placeholder="Digite seu RG" autocomplete="off">
+        </div> 
+
+        <div class="half-box">
+            <label class="lista" for="">CPF</label>
+            <input id="cpf" type="text" placeholder="Digite seu CPF" autocomplete="off">
         </div>
+
+        <div class="half-box spacing">
+            <label class="lista" for="">Endereço </label>
+            <input id="address" type="text" placeholder="Digite seu Endereço" autocomplete="off">
+        </div>
+
+        <div class="half-box">
+            <label class="lista" for="">Telefone</label>
+            <input id="telephone" type="text" placeholder="Digite seu Telefone"autocomplete="off">
+        </div>
+
         <div class="full-box">
-            <button type="button">Login</button>
+            <label class="lista" for="">Data de Nacimento</label>
+            <input id="dateofbirth" type="date" placeholder="Digite sua Data de Nacimento" autocomplete="off">
+        </div>
+
+        <div class="full-box">
+            <label class="lista" for="">E-mail</label>
+            <input id="email" type="text" placeholder="Digite seu E-mail"autocomplete="off">
+        </div>
+
+        <div class="full-box">
+            <input type="checkbox" name="agreement" id="agreement">
+            <label for="agreement" id="agreement-label" >Eu li e aceito os <a href="#">termos de uso</a></label>
+        </div>
+
+        <div class="full-box">
+            <button class="enter" type="button" onclick="cadastrarCliente()">Register</button>
         </div>
     </form>
-    <div id="social-container">
-        <p>Ou entre pelas suas redes sociais</p>
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-linkedin-in"></i>
-    </div>
-    <div id="register-conteiner">
-        <p>Ainda não tem uma conta?</p>
-        <a href="#">Rgistrar</a>
-    </div>
 </div>

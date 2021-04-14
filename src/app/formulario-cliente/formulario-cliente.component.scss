@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    border: none;
+}
+input, .lista{
+    display: block;
+    width: 100%;
+}
+input:focus, .lista:focus{
+    outline: none;
+}
+/* form */
+.main-container{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #000;
+    border-radius: 80px 0px 80px 0px;
+    padding: 25px;
+    margin-top: 10vh;
+    height: 745px;
+}
+.main-container h1{
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.6rem; /* adpatada ao elemento root */
+}
+.usuario{
+    width: 105px;
+    height: 105px;
+    border-radius: 5%;
+    position: relative;
+    top: -1%;
+    left: 175px;
+    
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.full-box{
+    flex: 1 1 100%;
+    position: relative;
+}
+.half-box{
+    flex: 1 1 45%;
+    position: relative;
+}
+.spacing{
+    margin-right: 2.5%;
+}
+.lista{
+    font-weight: bold;
+    font-size: .8rem;
+}
+input{
+    flex: 1 1 100%;
+    position: relative;
+
+    border-bottom: 2px solid #fff;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 30px;
+    background-color: rgba(0, 0, 5, 0.8);
+    border-radius: 10px 10px 10px 10px;
+}
+input:focus{
+    border-bottom: 2px solid #085588;
+}
+.enter{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+    margin-left: 26px;
+    margin-top: 10px;
+    color: #fff;
+    background-color: #085588;
+    padding: 10px 160px;
+    cursor: pointer;
+}
+.enter:focus{
+    outline: none;
+}
+.enter:hover{
+    cursor: pointer;
+    background: #063f66;
+    color: #fff;
+    transition: .5s;
+}
+#agreement{
+    margin-right: 5px;
+}
+#agreement,  #agreement-label{
+    display: inline-block;
+    width: auto;
+}
+#agreement-label a{
+    color: #085588;
+}
+#agreement-label a:hover{
+    color: #063f66;
+}

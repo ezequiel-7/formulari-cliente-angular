@@ -3,14 +3,24 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { FormularioClienteComponent } from './formulario-cliente/formulario-cliente.component';
+import { LoginClienteComponent } from './login-cliente/login-cliente.component';
+import { ListClienteComponent } from './list-cliente/list-cliente.component';
+import { FormsModule } from '@angular/forms';
+import { AppRoutingModule } from './app-routing.module';
+import { RascunhoAngularComponent } from './rascunho-angular/rascunho-angular.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FormularioClienteComponent
+    FormularioClienteComponent,
+    LoginClienteComponent,
+    ListClienteComponent,
+    RascunhoAngularComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
