@@ -3,41 +3,41 @@
     <img class="usuario" src="assets/images/585e4bf3cb11b227491c339a.png" alt="">
     <h1>Cadastro</h1>
 
-    <form>
+    <form [formGroup]="formClient" (ngSubmit)="cadastrarCliente()">
 
         <div class="full-box">
             <label class="lista" for="">Nome</label>
-            <input id="nome" type="text" placeholder="Digite seu Nome Completo" autocomplete="off">
+            <input formControlName="nome" id="nome" type="text" placeholder="Digite seu Nome Completo" autocomplete="off">
         </div>
 
         <div class="half-box spacing" >
             <label class="lista" for="">RG</label>
-            <input id="rg" type="text" placeholder="Digite seu RG" autocomplete="off">
+            <input formControlName="rg" id="rg" type="text" placeholder="Digite seu RG" autocomplete="off">
         </div> 
 
         <div class="half-box">
             <label class="lista" for="">CPF</label>
-            <input id="cpf" type="text" placeholder="Digite seu CPF" autocomplete="off">
+            <input formControlName="cpf" id="cpf" type="text" placeholder="Digite seu CPF" autocomplete="off">
         </div>
 
         <div class="half-box spacing">
             <label class="lista" for="">Endereço </label>
-            <input id="address" type="text" placeholder="Digite seu Endereço" autocomplete="off">
+            <input formControlName="endereco" id="address" type="text" placeholder="Digite seu Endereço" autocomplete="off">
         </div>
 
         <div class="half-box">
             <label class="lista" for="">Telefone</label>
-            <input id="telephone" type="text" placeholder="Digite seu Telefone"autocomplete="off">
+            <input formControlName="telefone" id="telephone" type="text" placeholder="Digite seu Telefone"autocomplete="off">
         </div>
 
         <div class="full-box">
             <label class="lista" for="">Data de Nacimento</label>
-            <input id="dateofbirth" type="date" placeholder="Digite sua Data de Nacimento" autocomplete="off">
+            <input formControlName="dataDeNascimento" id="dateofbirth" type="date" placeholder="Digite sua Data de Nacimento" autocomplete="off">
         </div>
 
         <div class="full-box">
             <label class="lista" for="">E-mail</label>
-            <input id="email" type="text" placeholder="Digite seu E-mail"autocomplete="off">
+            <input formControlName="email" id="email" type="text" placeholder="Digite seu E-mail"autocomplete="off">
         </div>
 
         <div class="full-box">
@@ -46,7 +46,7 @@
         </div>
 
         <div class="full-box">
-            <button class="enter" type="button" onclick="cadastrarCliente()">Register</button>
+            <button class="enter" type="submit" >Register</button>
         </div>
     </form>
 </div>

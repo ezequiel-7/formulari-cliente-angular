@@ -6,7 +6,7 @@ import { FormularioClienteComponent } from "./formulario-cliente/formulario-clie
 
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: 'login' },
+  { path: '', pathMatch: 'full', redirectTo: 'login-cliente' },
   { path: 'login-cliente', component: LoginClienteComponent },
   { path: 'list-cliente', component: ListClienteComponent },
   { path: 'formulario-cliente', component: FormularioClienteComponent }
