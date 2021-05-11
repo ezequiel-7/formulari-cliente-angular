@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-formulario-cliente',
@@ -12,13 +12,13 @@ export class FormularioClienteComponent implements OnInit {
 
   constructor(private formBuilder: FormBuilder) { 
     this.formClient = this.formBuilder.group({
-      nome: [''],
-      rg: [''],
-      cpf: [''],
-      endereco: [''],
-      telefone: [''],
-      dataDeNascimento: [''],
-      email: [''] 
+      nome: [null, [Validators.required, ]],
+      rg: [null, [Validators.required, ]],
+      cpf: [null, [Validators.required, Validators.minLength(5) ]],
+      endereco: [null, [Validators.required, ]],
+      telefone: [null, [Validators.required, ]],
+      dataDeNascimento: [null, [Validators.required, ]],
+      email: [null, [Validators.required, ]] 
     });
 
   }
