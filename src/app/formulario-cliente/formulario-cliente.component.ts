@@ -14,7 +14,12 @@ export class FormularioClienteComponent implements OnInit {
     this.formClient = this.formBuilder.group({
       nome: [null, [Validators.required, ]],
       rg: [null, [Validators.required, ]],
-      cpf: [null, [Validators.required, Validators.minLength(5) ]],
+      cpf: [null, [
+        Validators.required, 
+        Validators.minLength(11), 
+        Validators.maxLength(14), 
+        Validators.pattern(/\d{3}[.]\d{3}[.]\d{3}[-]\d{2}/) 
+      ]],
       endereco: [null, [Validators.required, ]],
       telefone: [null, [Validators.required, ]],
       dataDeNascimento: [null, [Validators.required, ]],
