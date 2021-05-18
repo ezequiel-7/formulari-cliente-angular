@@ -35,4 +35,34 @@ export class FormularioClienteComponent implements OnInit {
     console.log(this.formClient);
   }
 
+  public createTask(): void {
+    console.log(this.taskForm.get('cpf')?.errors)
+  }
+
+  public getErrors(field: string): string {
+    let msg;
+    const errors = this.taskForm.get(field)?.errors;
+
+    for (const key in errors) {
+      if (errors.hasOwnProperty(key)) {
+        msg = (ValidatorCases as any)[key]
+        console.log(errors)
+        return msg.replace('#field', (Translate as any)
+        field).replace('#quantity', errors[key].requiredLength);
+      }
+    }
+
+    return'';
+  }
+}
+
+export enum ValidatorCases {
+  required = 'Preencha o campo #field!',
+  minlength = 'O campo #field deve conter #quantity dígitos',
+  maxlength = 'O campo #field deve conter #quantity dígitos',
+  pattern = 'Formato de #field inválido!'
+}
+
+export enum Translate {
+  cpf = 'cpf',
 }
